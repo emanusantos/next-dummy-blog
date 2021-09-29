@@ -17,6 +17,8 @@ const getPostData = (fileName) => {
         ...data,
         content
     };
+
+    return postData;
 };
 
 export const getAllPosts = () => {
