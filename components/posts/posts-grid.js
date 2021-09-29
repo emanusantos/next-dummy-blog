@@ -1,12 +1,12 @@
 import PostItem from './post-item'
-import classes from './post-grid.module.css'
+import classes from './posts-grid.module.css'
 
-const PostGrid = ({ posts }) => {
+const PostsGrid = ({ posts }) => {
     return (
-        <ul>
-            {posts.map(post => <PostItem key={Math.floor(Math.random() * 10)} />)}
+        <ul className={classes.grid}>
+            {posts.map(post => <PostItem post={post} key={post.slug} />)}
         </ul>
     );
 };
 
-export default PostGrid;
+export default PostsGrid;
