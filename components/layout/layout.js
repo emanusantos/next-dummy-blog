@@ -1,6 +1,10 @@
-const Layout = () => {
+import MainNavigation from "./main-navigation";
+
+const Layout = ({ children }) => {
     return (
         <>
+        <MainNavigation />
+        <main>{children}</main>
         </>
     );
 };
